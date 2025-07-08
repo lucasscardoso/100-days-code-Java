@@ -1,0 +1,19 @@
+# Ignora arquivos e pastas do Eclipse
+/.settings/
+/.classpath
+.project
+
+# Ignora diretórios de build
+/bin/
+/target/
+
+# Ignora arquivos de backup do Eclipse
+*.bak
+*.tmp
+
+# Ignora logs ou arquivos temporários
+*.log
+
+# Ignora arquivos do sistema operacional (opcional)
+.DS_Store
+Thumbs.db
