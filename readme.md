@@ -14,7 +14,7 @@ O objetivo deste desafio é aprimorar minhas habilidades em Java, ganhar experi�
 
 ## 📆 Como vai funcionar?
 
-✅ **Duração**: 100 dias consecutivos  (inicio 08/07/2025, termino programado 15/10/2025)
+✅ **Duração**: 100 dias consecutivos  (inicio 11/07/2025, termino programado 19/10/2025)
 ✅ **Linguagem**: Java  
 ✅ **Meta diária**: Resolver ao menos 1 problema ou desenvolver um pequeno projeto/exercício por dia  
 ✅ **Registro**: Cada dia será salvo em uma pasta separada (`dia-01`, `dia-02`, etc.), com o código-fonte e uma breve explicação do que foi feito.
