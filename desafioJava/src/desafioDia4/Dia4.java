@@ -1,6 +1,5 @@
 package desafioDia4;
 
-import java.util.Locale;
 import java.util.Scanner;
 import java.util.function.BiFunction;
 
@@ -17,6 +16,8 @@ public class Dia4 {
 		
 		System.out.println("Digite seu peso ");
 		peso = sc.nextDouble();
+		
+		sc.close();
 		
 		BiFunction<Double, Double, String> calculoImc = (a,p) -> {
 			double calc = p / (a * a);
