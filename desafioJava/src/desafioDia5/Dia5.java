@@ -3,7 +3,6 @@ package desafioDia5;
 import java.util.Scanner;
 import java.util.function.BiFunction;
 import java.util.function.Function;
-import java.util.function.Predicate;
 
 public class Dia5 {
 
@@ -20,6 +19,8 @@ public class Dia5 {
 			
 			System.out.println("Digite o valor do Aumento de Salario: ");
 			aumento = sc.nextInt();
+			
+			sc.close();
 			
 			BiFunction<Integer, Double, Double> calcAumento = (aumentoSal,salario) -> {
 				salario *= (aumentoSal / 100.0 + 1);
