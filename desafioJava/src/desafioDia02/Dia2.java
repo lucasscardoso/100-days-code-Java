@@ -1,4 +1,4 @@
-package desafioDia2;
+package desafioDia02;
 
 import java.math.BigInteger;
 

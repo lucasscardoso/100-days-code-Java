@@ -1,4 +1,4 @@
-package desafioDia3;
+package desafioDia03;
 
 public class Dia3 {
 

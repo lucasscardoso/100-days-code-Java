@@ -1,4 +1,4 @@
-package desafioDia8;
+package desafioDia08;
 
 import java.util.Scanner;
 import java.util.function.Function;

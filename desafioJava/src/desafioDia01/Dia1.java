@@ -1,4 +1,4 @@
-package desafioDia1;
+package desafioDia01;
 
 import java.util.stream.IntStream;
 

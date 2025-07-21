@@ -1,4 +1,4 @@
-package desafioDia7;
+package desafioDia07;
 
 import java.util.Scanner;
 import java.util.stream.IntStream;

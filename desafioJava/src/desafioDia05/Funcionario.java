@@ -1,4 +1,4 @@
-package desafioDia5;
+package desafioDia05;
 
 public class Funcionario {
 

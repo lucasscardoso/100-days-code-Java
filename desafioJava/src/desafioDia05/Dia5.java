@@ -1,4 +1,4 @@
-package desafioDia5;
+package desafioDia05;
 
 import java.util.Scanner;
 import java.util.function.BiFunction;
