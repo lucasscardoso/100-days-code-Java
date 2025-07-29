@@ -84,10 +84,13 @@ public class Dia16 {
 			
 			}
 		}
+		sc.close();
 
 	}
 
 }
+
+//Dia 16
 
 //Descrição:
 //
