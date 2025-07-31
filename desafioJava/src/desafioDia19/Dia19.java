@@ -77,6 +77,8 @@ public class Dia19 {
 	}
 }
 
+//Dia 19
+
 //Exercício – Jogo da Senha Secreta
 //Descrição:
 //Crie um programa que gere automaticamente uma senha secreta com 4 números aleatórios entre 0 e 9 (ex.: 5 3 8 1).
