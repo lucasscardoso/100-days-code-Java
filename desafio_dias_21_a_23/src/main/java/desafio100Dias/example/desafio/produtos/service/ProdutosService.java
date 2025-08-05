@@ -2,9 +2,12 @@ package desafio100Dias.example.desafio.produtos.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import desafio100Dias.example.desafio.produtos.model.Produtos;
 import desafio100Dias.example.desafio.produtos.repository.ProdutosRepository;
 
+@Service
 public class ProdutosService {
 
 	private final ProdutosRepository repository;
