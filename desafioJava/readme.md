@@ -181,5 +181,6 @@ Crie um programa em Java que simule um caixa eletrônico com as seguintes funcio
 	```2 - Depositar```
 	```3 - Sacar```
 	```0 - Sair```
-
+	### Dia 21 a 23:
+		- Desenvolvimento de API, um CRUD simples, foi implementado swagger para facilitar testes.
  

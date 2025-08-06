@@ -31,6 +31,12 @@ public class ProdutosService {
             return repository.save(produto);
         }).orElse(null);
     }
+	
+	public Produtos buscar(Long id) {
+	    return repository.findById(id)
+	            .orElseThrow(() -> new RuntimeException("Produto não encontrado com id: " + id));
+	}
+        
 
     public boolean deletar(Long id) {
         if (repository.existsById(id)) {

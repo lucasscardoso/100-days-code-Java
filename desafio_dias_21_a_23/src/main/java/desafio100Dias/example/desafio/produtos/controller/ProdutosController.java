@@ -4,6 +4,7 @@ import desafio100Dias.example.desafio.produtos.model.Produtos;
 import desafio100Dias.example.desafio.produtos.service.ProdutosService;
 import io.swagger.v3.oas.annotations.Operation;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,6 +36,14 @@ public class ProdutosController {
     @PutMapping("/{id}")
     public Produtos atualizar(@PathVariable Long id, @RequestBody Produtos produto) {
         return service.atualizar(id, produto);
+    }
+    
+    @Operation(summary = "busca", description = "Retorna o Produto Buscando por ID")
+    @GetMapping("/{id}")
+    public ResponseEntity<Produtos> busca(@PathVariable Long id) {
+        Produtos produto = service.buscar(id);
+        return ResponseEntity.ok(produto);
+        
     }
 
     @Operation(summary = "Deleta Produto com Id")
