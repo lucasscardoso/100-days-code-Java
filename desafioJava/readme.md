@@ -181,6 +181,11 @@ Crie um programa em Java que simule um caixa eletrônico com as seguintes funcio
 	```2 - Depositar```
 	```3 - Sacar```
 	```0 - Sair```
-	### Dia 21 a 23:
-		- Desenvolvimento de API, um CRUD simples, foi implementado swagger para facilitar testes.
+### Dia 21 a 23:
+		- Desenvolvimento de API de produtos, um CRUD simples, foi implementado swagger para facilitar testes.
+		
+### Dia 24 a 26:
+		- Desenvolvimento de API de ToDo List, um CRUD simples, foi implementado swagger para facilitar testes.
+### Dia 27 a 30:
+		- Desenvolvimento de API de Usuário com autenticação básica (Sem JWT), um CRUD simples, foi implementado swagger para facilitar testes.
  
