@@ -2,9 +2,12 @@ package com.desafio100Dias._a26.demo.tarefas.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.desafio100Dias._a26.demo.tarefas.model.Tarefa;
 import com.desafio100Dias._a26.demo.tarefas.repository.TarefaRepository;
 
+@Service
 public class TarefaService {
 
 	private final TarefaRepository repository;
@@ -21,15 +24,13 @@ public class TarefaService {
 		return repository.findAll();
 	}
 	
-	public Tarefa buscaId(Long id) {
+	public Tarefa buscaId(Long id,Tarefa tarefaNova) {
 		return repository.findById(id)
-				.orElseThrow(() -> new RuntimeException("Tarefa com Id " + id + " não Localizada"));
+			.orElseThrow(() -> new RuntimeException("Tarefa com Id " + id + " não Localizada"));
 	}
 	
 	public Tarefa alteraTarefa(Long id,Tarefa tarefaAtualizada) {
 		return repository.findById(id).map(tarefa -> {
-			
-			tarefa.setTitulo(tarefaAtualizada.getTitulo());
 			tarefa.setDataLimite(tarefaAtualizada.getDataLimite());
 			tarefa.setConcluida(tarefaAtualizada.isConcluida());
 			

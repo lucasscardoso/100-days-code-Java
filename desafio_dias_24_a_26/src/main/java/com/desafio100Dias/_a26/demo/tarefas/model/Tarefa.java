@@ -16,10 +16,13 @@ public class Tarefa {
 	@Schema(accessMode = Schema.AccessMode.READ_ONLY)
 	private Long id;
 	private String titulo;
-	private Date dataLimite;
+	private String dataLimite;
 	private boolean concluida;
 	
-	public Tarefa(Long id, String titulo, Date dataLimite, boolean concluida) {
+	
+	public Tarefa() {}
+	
+	public Tarefa(Long id, String titulo, String dataLimite, boolean concluida) {
 		this.id = id;
 		this.titulo = titulo;
 		this.dataLimite = dataLimite;
@@ -42,11 +45,11 @@ public class Tarefa {
 		this.titulo = titulo;
 	}
 
-	public Date getDataLimite() {
+	public String getDataLimite() {
 		return dataLimite;
 	}
 
-	public void setDataLimite(Date dataLimite) {
+	public void setDataLimite(String dataLimite) {
 		this.dataLimite = dataLimite;
 	}
 
