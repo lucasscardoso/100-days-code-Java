@@ -1,10 +1,14 @@
 package com.desafio_dias_27_a_30.demo.cadastro.model;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.annotation.Generated;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,13 +22,16 @@ public class Cadastro {
 	@Schema(accessMode = Schema.AccessMode.READ_ONLY)
 	private Long id;
 	private String nome;
+	@Column(unique = true, nullable = false)
 	private String email;
-	public String senha;
-	public Date dataCadastro;
+	private String senha;
+	@Schema(accessMode = Schema.AccessMode.READ_ONLY)
+	@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
+	private LocalDateTime dataCadastro;
 	
 	public Cadastro() {}
 	
-	public Cadastro(Long id, String nome, String email, String senha, Date dataCadastro) {
+	public Cadastro(Long id, String nome, String email, String senha, LocalDateTime dataCadastro) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
@@ -64,12 +71,12 @@ public class Cadastro {
 		this.senha = senha;
 	}
 
-	public Date getDataCadastro() {
+	public LocalDateTime getDataCadastro() {
 		return dataCadastro;
 	}
 
-	public void setDataCadastro(Date dataCadastro) {
-		this.dataCadastro = dataCadastro;
+	public void setDataCadastro(LocalDateTime localDateTime) {
+		this.dataCadastro = localDateTime;
 	}
 
 	@Override
